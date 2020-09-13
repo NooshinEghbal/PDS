@@ -42,7 +42,7 @@ At NFS client node:
 
 Run PDS_client to create a channel between NFS client and server nodes:
 
-PDS_client.out <number of TCP streams> <block size> <connection type> <IP addr of the server> PF <local port> <remote port>
+PDS_client.out (number of TCP streams) (block size) (connection type) (IP addr of the server) PF (local port) (remote port)
 
 For example:  
 PDS_client.out 5 10000 TCP 192.168.154.21 PF 3049 2049
