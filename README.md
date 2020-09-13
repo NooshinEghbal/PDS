@@ -5,7 +5,7 @@ PDS is a tool on top of which other client-server programs like rsync can run.
 It transfers data between client and server through parallel TCP streams like
 the mechanism used by GridFTP for transferring files.
 
-# compile
+# Compile
 make clean
 make
 
