@@ -13,7 +13,7 @@ make
 Then put the folder containing PDS_client.out, PDS_server.out and transceiver.out in the PATH on both end hosts.
 NOTE: Update rsync to the latest version (3.1.1 or above) to get a beffer performance.
 
-# Run rsync over PDS
+# rsync over PDS
 
 rsync -v --progress --rsh="PDS_client.out <number of TCP streams> <block size> <connection type>" <path to the source file> <IP addr of the server>:<path to the destination file>
 
@@ -28,7 +28,7 @@ NOTE:
 - The block size argument should be <=10000 for parallel TCP connections and <=4000 for parallel SSH connections. 
 - If you want to run PDS with more than 9 parallel SSH connections you should modify sshd_config file to increase the maximum parallel SSH connections from the default value which is 10.
 
-# Run NFS over PDS
+# NFS over PDS
 
 At NFS server node:
 
