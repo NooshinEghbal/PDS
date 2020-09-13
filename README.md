@@ -15,7 +15,7 @@ NOTE: Update rsync to the latest version (3.1.1 or above) to get a beffer perfor
 
 # rsync over PDS
 
-rsync -v --progress --rsh="PDS_client.out (number of TCP streams) <block size> <connection type>" <path to the source file> <IP addr of the server>:<path to the destination file>
+rsync -v --progress --rsh="PDS_client.out (number of TCP streams) (block size) <<connection type>> <path to the source file> <IP addr of the server>:<path to the destination file>
 
 Example for parallel TCP connections:  
 rsync -v --progress --rsh="PDS_client.out 5 10000 TCP" /dev/shm/eghbal/test.blob 192.168.154.21:/dev/shm/eghbal/test.blob
