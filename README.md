@@ -6,7 +6,6 @@ It transfers data between client and server through parallel TCP streams like
 the mechanism used by GridFTP for transferring files.
 
 # Compile
-make clean
 make
 
 
